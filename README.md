@@ -9,20 +9,22 @@
 
 ## The Ecosystem
 
-  Jay Arcade
-  ├── jayarcade.com               — game delivery platform, CRT frontend, 9 shipped titles
-  ├── leaderboard-server          — REST API + PostgreSQL (Railway), per-game auth
-  ├── factory-network-server      — WebSocket server: rooms, matchmaking, peer messaging
-  ├── build pipeline              — Python: extract → patch → grid regenerate → deploy
-  ├── jay-mobile.js               — on-screen arcade controller (d-pad + face buttons)
-  ├── TurboWarp Game Factory      — 11 modular extensions + AI game dev tooling
-  │   ├── factory-leaderboards.js — score submission + leaderboard display
-  │   ├── factory-network.js      — multiplayer in a few block calls
-  │   ├── textify-blockify-IR     — Scratch blocks ↔ AI via canonical text IR
-  │   └── + 8 more extensions    — physics, animation, camera, UI, audio, controls
-  └── bird-duty-lite              — ESP32 handheld "playable business card" (in progress)
+  **Jay Arcade**
+  - [jayarcade.com](https://jayarcade.com) — game delivery platform, CRT frontend, 9 shipped titles
+  - [leaderboard-server](https://github.com/loronajay/leaderboard-server) — REST API + PostgreSQL (Railway), per-game
+  auth
+  - [factory-network-server](https://github.com/loronajay/factory-network-server) — WebSocket server: rooms,
+  matchmaking, peer messaging
+  - Build pipeline — Python: extract → patch → grid regenerate → deploy
+  - `jay-mobile.js` — on-screen arcade controller (d-pad + face buttons)
+  - TurboWarp Game Factory — 11 modular extensions + AI game dev tooling
+    - `factory-leaderboards.js` — score submission + leaderboard display
+    - `factory-network.js` — multiplayer in a few block calls
+    - [textify-blockify-IR](https://github.com/loronajay/textify-blockify-IR) — Scratch blocks ↔ AI via canonical text IR
+    - \+ 8 more extensions — physics, animation, camera, UI, audio, controls
+  - [bird-duty-lite](https://github.com/loronajay/bird-duty-lite) — ESP32 handheld "playable business card" (in progress)
 
-  ---
+   ---
 
 ## Why each piece exists
 
