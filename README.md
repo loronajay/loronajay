@@ -7,26 +7,24 @@
 
   ---
 
-  ## The Ecosystem
+## The Ecosystem
 
   Jay Arcade
   ├── jayarcade.com               — game delivery platform, CRT frontend, 9 shipped titles
-  ├── leaderboard-server          — REST API + PostgreSQL (Railway), per-game secret key auth
+  ├── leaderboard-server          — REST API + PostgreSQL (Railway), per-game auth
   ├── factory-network-server      — WebSocket server: rooms, matchmaking, peer messaging
-  ├── build pipeline              — Python: ZIP extract → HTML patch → grid regenerate → deploy
-  ├── jay-mobile.js               — custom on-screen arcade controller (d-pad + face buttons)
-  └── TurboWarp Game Factory      — 11 modular extensions + AI game dev tooling
-      ├── factory-leaderboards.js — score submission + leaderboard display, plug into any game
-      ├── factory-network.js      — multiplayer in a few block calls
-      ├── textify-blockify-IR     — serialize Scratch blocks → AI → render back as blocks
-      └── + 8 more extensions     — physics, animation, camera, UI, audio, controls...
-
-  Hardware in progress:
-  └── bird-duty-lite              — ESP32 handheld "playable business card" (firmware pending)
+  ├── build pipeline              — Python: extract → patch → grid regenerate → deploy
+  ├── jay-mobile.js               — on-screen arcade controller (d-pad + face buttons)
+  ├── TurboWarp Game Factory      — 11 modular extensions + AI game dev tooling
+  │   ├── factory-leaderboards.js — score submission + leaderboard display
+  │   ├── factory-network.js      — multiplayer in a few block calls
+  │   ├── textify-blockify-IR     — Scratch blocks ↔ AI via canonical text IR
+  │   └── + 8 more extensions    — physics, animation, camera, UI, audio, controls
+  └── bird-duty-lite              — ESP32 handheld "playable business card" (in progress)
 
   ---
 
-  ## Why each piece exists
+## Why each piece exists
 
   **Leaderboard server** — Implementing leaderboards directly in TurboWarp games was messy
   and one-off every time. I needed something I could drop into any game without rebuilding
@@ -50,7 +48,7 @@
 
   ---
 
-  ## How I work
+## How I work
 
   I build with AI assistance — modularly, with understanding at each step.
   I think in systems: how pieces connect, where failure points are, what to automate.
@@ -61,12 +59,11 @@
 
   ---
 
-  ## Repos
+## Repos
 
   | Repo | What it is |
   |---|---|
-  | [textify-blockify-IR](https://github.com/loronajay/textify-blockify-IR) | TurboWarp Game Factory — extensions + IR
-  tooling |
+  | [textify-blockify-IR](https://github.com/loronajay/textify-blockify-IR) | Game Factory extensions + IR tooling |
   | [factory-network-server](https://github.com/loronajay/factory-network-server) | WebSocket matchmaking server |
   | [leaderboard-server](https://github.com/loronajay/leaderboard-server) | Global leaderboard REST API |
   | [bird-duty-lite](https://github.com/loronajay/bird-duty-lite) | ESP32 handheld hardware project |
