@@ -69,6 +69,6 @@
   | [factory-network-server](https://github.com/loronajay/factory-network-server) | WebSocket matchmaking server |
   | [leaderboard-server](https://github.com/loronajay/leaderboard-server) | Global leaderboard REST API |
   | [bird-duty-lite](https://github.com/loronajay/bird-duty-lite) | ESP32 handheld hardware project |
-  | [games-directory-page](https://github.com/loronajay/games-directory-page) | jayarcade.com — the platform |
+  | [games-directory-page](https://github.com/loronajay/games-directory) | jayarcade.com — the platform |
 
   **Email:** leojaylorona@gmail.com
