@@ -1,74 +1,54 @@
-# Jay Lorona — Jay Arcade Portfolio
+# Jay Lorona — Full-Stack Developer & Builder
 
-  Solo developer building a full-stack competitive arcade platform from the ground up.
-  Every piece of infrastructure here was built to solve a specific real problem.
+Solo developer shipping products end-to-end: games, arcade platforms, hardware, and backend infrastructure.
+Every piece built to solve a real problem, not to learn a framework.
 
-  → **[jayarcade.com](https://jayarcade.com)**
+→ **[jayarcade.com](https://jayarcade.com)**
 
-  ---
+---
 
-## The Ecosystem
+## Current Work
 
-  **Jay Arcade**
-  - [jayarcade.com](https://jayarcade.com) — game delivery platform, CRT frontend, 9 shipped titles
-  - [leaderboard-server](https://github.com/loronajay/leaderboard-server) — REST API + PostgreSQL (Railway), per-game
-  auth
-  - [factory-network-server](https://github.com/loronajay/factory-network-server) — WebSocket server: rooms,
-  matchmaking, peer messaging
-  - Build pipeline — Python: extract → patch → grid regenerate → deploy
-  - `jay-mobile.js` — on-screen arcade controller (d-pad + face buttons)
-  - TurboWarp Game Factory — 11 modular extensions + AI game dev tooling
-    - `factory-leaderboards.js` — score submission + leaderboard display
-    - `factory-network.js` — multiplayer in a few block calls
-    - [textify-blockify-IR](https://github.com/loronajay/textify-blockify-IR) — Scratch blocks ↔ AI via canonical text IR
-    - \+ 8 more extensions — physics, animation, camera, UI, audio, controls
-  - [bird-duty-lite](https://github.com/loronajay/bird-duty-lite) — ESP32 handheld "playable business card" (in progress)
+**Jay Arcade** — Competitive arcade platform with 9+ shipped titles
+- [jayarcade.com](https://jayarcade.com) — game delivery platform, CRT frontend
+- [leaderboard-server](https://github.com/loronajay/leaderboard-server) — Global leaderboards (REST API + PostgreSQL)
+- [factory-network-server](https://github.com/loronajay/factory-network-server) — WebSocket server for rooms & matchmaking
+- Modular game extensions for physics, animation, camera, UI, audio, controls
+- Python build pipeline for game extraction, patching, analytics, deployment
 
-   ---
+**Hardware & Embedded**
+- [bird-duty-lite](https://github.com/loronajay/bird-duty-lite) — ESP32 handheld gaming "playable business card"
 
-## Why each piece exists
+**Game Development & Tooling**
+- [javascript-game-factory](https://github.com/loronajay/javascript-game-factory) — Modular game framework
+- [juggle-fighter](https://github.com/loronajay/juggle-fighter) — Shipped arcade title
+- [games-directory](https://github.com/loronajay/games-directory) — Platform games catalog
+- [OVERTAKE](https://github.com/loronajay/OVERTAKE) — Card game project
 
-  **Leaderboard server** — Implementing leaderboards directly in TurboWarp games was messy
-  and one-off every time. I needed something I could drop into any game without rebuilding
-  the infrastructure. I built a REST API server with per-game authentication, then wrapped
-  it in `factory-leaderboards.js` — a TurboWarp extension that makes score submission a
-  single block call.
+**Backend & Services**
+- [project-lore](https://github.com/loronajay/project-lore) — Backend services
+- [insta_haul](https://github.com/loronajay/insta_haul) — Hauling business platform
 
-  **Build pipeline** — I was manually editing HTML for every game export. By game #3 that
-  was unsustainable. I wrote a Python pipeline that handles extraction, patching, analytics
-  injection, and grid regeneration automatically.
+---
 
-  **Factory Network** — Adding multiplayer to a TurboWarp game meant understanding
-  WebSocket servers, room management, and matchmaking from scratch. I built the server
-  and a companion extension so that multiplayer is a few block calls, not an
-  infrastructure project.
+## How I Work
 
-  **Textify/Blockify IR** — I couldn't get useful AI assistance with TurboWarp block
-  programs because there was no way to express block logic as text. I designed a
-  round-trip IR system: serialize blocks to a canonical text format → send to AI →
-  render the result back as visual Scratch blocks.
+I build with AI assistance—modularly, with understanding at each step.
+I think in systems: how pieces connect, where failure points are, what to automate.
+When something is painful to repeat, I build a tool so I never repeat it.
 
-  ---
+**Strongest at:** system design, full-stack product shipping, build automation, identifying real problems and building solutions.
 
-## How I work
+---
 
-  I build with AI assistance — modularly, with understanding at each step.
-  I think in systems: how pieces connect, where failure points are, what to automate.
-  When something is painful to repeat, I build a tool so I never repeat it.
+## Tech Stack
 
-  Strongest at: system design, build tooling, end-to-end product shipping,
-  identifying real problems and building real solutions.
+- **Frontend:** HTML/CSS/JavaScript, arcade UI design
+- **Backend:** Node.js, REST APIs, WebSocket servers, PostgreSQL
+- **Embedded:** ESP32, Arduino
+- **Build:** Python pipeline automation
+- **AI Integration:** LLM-assisted development workflows
 
-  ---
+---
 
-## Repos
-
-  | Repo | What it is |
-  |---|---|
-  | [textify-blockify-IR](https://github.com/loronajay/textify-blockify-IR) | Game Factory extensions + IR tooling |
-  | [factory-network-server](https://github.com/loronajay/factory-network-server) | WebSocket matchmaking server |
-  | [leaderboard-server](https://github.com/loronajay/leaderboard-server) | Global leaderboard REST API |
-  | [bird-duty-lite](https://github.com/loronajay/bird-duty-lite) | ESP32 handheld hardware project |
-  | [games-directory-page](https://github.com/loronajay/games-directory) | jayarcade.com — the platform |
-
-  **Email:** leojaylorona@gmail.com
+**Email:** leojaylorona@gmail.com
